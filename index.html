@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(14, 1, 43);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color: rgb(8, 8, 57);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul a:hover {
+            color: red;
+            font-size: 1.1rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+        }
+
+        .firstSection>div {
+            margin: auto;
+            align-items: center;
+            /* width: 30%; */
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .rightSection img {
+            width: 90%;
+        }
+
+        .purple {
+            color: #fe0f4b;
+        }
+
+        #element {
+            color: red;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 85vh;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        main hr {
+            background: red;
+            border: 0;
+            height: 1px;
+            margin: 40px 84px;
+        }
+
+        .heading1 {
+            font-size: 3rem;
+        }
+
+        .secondSection .horizontal {
+            height: 2px;
+            background: white;
+            margin: 145px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .secondSection .vertical {
+            height: 55px;
+            background: white;
+            width: 1.5px;
+        }
+
+        .image-top {
+            position: relative;
+            width: 63px;
+            /* margin: -4px 0; */
+            top: -68px;
+            right: 26px;
+        }
+
+        .work-desc {
+            display: inline-block;
+            width: 122px;
+            color: grey;
+            font-size: small;
+        }
+
+        .work-title-spring {
+            margin: 13px 0 0 0;
+        }
+
+        .footer {
+            background: #121318;
+            height: 115px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .ft {
+            margin: 5px 20px;
+        }
+
+        .ft ul {
+            list-style-type: none;
+        }
+
+        .fth {
+            margin: 5px 15px;
+        }
+
+        .statement {
+            background: #121318;
+            text-align: center;
+            color: gray;
+            font-size: small;
+        }
+
+        .buttons {
+            margin: 100px 12px 0;
+
+        }
+
+
+        .btn {
+            padding: 12px;
+            text-align: center;
+            background: red;
+            width: auto;
+            border: 2px solid white;
+            border-radius: 15px;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Prakash's Protfolio</div>
+            <div class="right">
+                <ul>
+                    <a href="/">
+                        <li>Home</li>
+                    </a>
+                    <a href="/">
+                        <li>About</li>
+                    </a>
+                    <a href="/">
+                        <li>Services</li>
+                    </a>
+                    <a href="/">
+                        <li>Projects</li>
+                    </a>
+                    <a href="/">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hello my name is <span class="purple">Prakash</span>
+                <div>this is all about me </div>
+                <div><span id="element"></span></div>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+
+            </div>
+            <div class="rightSection">
+                <img src="comp.png" alt="coder">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span style="color: gray;">what i have earned so far</span>
+            <h1 class="heading1">Knowledge gained</h1>
+            <div class="horizontal">
+                <div class="vertical">
+                    <img class="image-top" src="java.png" alt="java">
+                    <div class="work-title">
+                        Learned Java
+                    </div>
+                    <div class="work-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni provident, doloremque obcaecati
+                        enim eius non.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="spring.png" alt="java">
+                    <div class="work-title-spring">
+                        Learned Spring
+                    </div>
+                    <div class="work-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni provident, doloremque obcaecati
+                        enim eius non.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="js.png" alt="java">
+                    <div class="work-title">
+                        Learned JavaScript
+                    </div>
+                    <div class="work-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni provident, doloremque obcaecati
+                        enim eius non.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="react.png" alt="java">
+                    <div class="work-title">
+                        Learned react
+                    </div>
+                    <div class="work-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni provident, doloremque obcaecati
+                        enim eius non.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="fth" class="footer-first">Prakash Protfolio</div>
+            <div class="ft" class="footer-second">
+                <ul>
+                    <li>java</li>
+                    <li>spring</li>
+                    <li>javascript</li>
+                    <li>react</li>
+                </ul>
+            </div>
+            <div class="ft" class="footer-third">
+                <ul>
+                    <li>java</li>
+                    <li>spring</li>
+                    <li>javascript</li>
+                    <li>react</li>
+                </ul>
+            </div>
+            <div class="ft" class="footer-fourth">
+                <ul>
+                    <li>java</li>
+                    <li>spring</li>
+                    <li>javascript</li>
+                    <li>react</li>
+                </ul>
+            </div>
+        </div>
+        <div class="statement">&copy all right reserved from Prakash</div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['web developer', 'java developer', 'web designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
